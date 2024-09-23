@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html >
+
+<body>
+    <!-- Type Conversion -->
+<!-- 1- string Conversion -->
+<script>
+
+//     let value = true
+//     alert(typeof value)
+
+//     value = String(value)  // now value is string
+//     alert(typeof value)  // string
+
+//     // String conversion is mostly obvious. A false becomes "false", null becomes "null", etc.
+
+// // 2- Numeric conversion
+//  alert("6" / "3")   // string are converted to number
+ 
+//  let str = "1234";
+//  alert(typeof str);   // string
+
+//  let num = Number(str)    // becomes a number
+// alert(typeof num) // number
+
+// // Numeric conversion rules:
+
+// // Value	        Becomes…
+// // undefined	       NaN
+// // null             	0
+// // true and false	   1 and 0
+// // string	Whitespaces (includes spaces, tabs \t, newlines \n etc.) from the start and end are removed.
+// //  If the remaining string 
+// // is empty, the result is 0. Otherwise, the number is “read” from the string. An error gives NaN.
+
+// // Exanple
+// alert(Number(" 123 "))  // 123
+// alert(Number("123z"))   // NaN (error reading a  numnber at "z")
+// alert(Number(true))    //1
+// alert(Number(false))    // 0
+
+// // Boolean convertion
+// alert(Boolean(1))   // true
+// alert(Boolean(0))  // false
+// alert(Boolean("Hello"))  // true
+// alert(Boolean(""))   // false
+
+// // operators in javascript
+// //1- What are the final values of all variables a, b, c and d after the code below?
+// // let a = 1, b = 1;
+// // let c = ++a; // ?
+// // let d = b++; // 
+
+// let a = 1;
+// let b = 1;
+// let c = ++a      // 2, prefix form returns the new value
+// let d = b++       // 1, postfix form returns the old value
+// alert(c)
+// alert(d)
+
+// //2- What are the values of a and x after the code below?
+
+// let e = 2;
+// let x = 1 + (e *= 2);
+// alert(x)    // 5
+
+// // 3- What are results of these expressions?
+// "" + 1 + 0       // = 10
+// "" - 1 + 0       // = -1
+// true + false      // = 1
+// 6 / "3"          // = 2
+// "2" * "3"         // = 6
+// 4 + 5 + "px"      // = "9px"
+// "$" + 4 + 5       // = "45$" 
+// "4" - 2            // = 2
+// "4px" - 2         // NaN
+// "  -9  " + 5      // = "-95"
+// "  -9  " - 5      // = -14
+// null + 1          // = 1
+// undefined + 1      // = NaN
+// " \t \n" - 2       // - 2
+
+//3 - Here’s a code that asks the user for two numbers and shows their sum.
+
+let f = +prompt("First number?", 1);
+let g = +prompt("Second number?", 2);
+
+alert(f + g); // 3
+</script>
+
+
+
+</body>
+</html>
+
